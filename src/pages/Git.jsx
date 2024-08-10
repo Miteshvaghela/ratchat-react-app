@@ -7,7 +7,7 @@ const [userData, SetUserData] = useState([]);
 let { userId } = useParams();
 
 const fetchGitInfo = () => {
-  fetch('https://api.github.com/users/miteshvaghela')
+  fetch(`https://api.github.com/users/${userId}`)
     .then(data => data.json())
     .then(res => SetUserData(res))
     .catch(error => console.error(error));  
@@ -16,6 +16,8 @@ const fetchGitInfo = () => {
 const handleFetchGitData = () => {
     fetchGitInfo()
 }
+
+console.log(userData, ': User Data');
   return (
     
     <section className="bg-white dark:bg-gray-900">
