@@ -15,8 +15,7 @@ const Chat = () => {
     console.log(
       'User connected : ', socket.id
     );
-  })
-   
+  })   
   return (
     
     <section className="bg-white dark:bg-gray-900">
@@ -44,7 +43,10 @@ const Chat = () => {
         <div className="messages bg-gray-300 w-full  p-4 rounded-lg m-auto h-96 overflow-scroll overflow-x-hidden">          
             <p className="left text-left"><b>Miteshvaghela</b> : Hello</p>
             <p className="right text-right"><b>John</b> : Hiii</p>           
+            <p className="left text-left"><b>Miteshvaghela</b> : How are you?</p>
+            <p className="right text-right"><b>John</b> : I'm fine thanks!</p>
         </div>
+        
       </div>
     </div>
         
